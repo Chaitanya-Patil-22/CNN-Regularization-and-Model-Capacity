@@ -1,0 +1,156 @@
+iteration: 300 train_acc=100, test_acc=75.8
+iteration: 1000 train_acc=100 , test_acc=80
+iteration:2000  train_acc=100 , test_acc=75.8
+
+
+L2 regularization
+lambda=0  train_acc=100 , test_acc=77.5
+lambda=.1 train_acc=100 , test_acc=77.5
+lambda=.3   train_acc=100 , test_acc=75
+lambda=.6   train_acc=100 test_acc=80 
+lambda=1.0
+lambda=2.0
+
+after normalization
+iteration:1000 
+
+seed 1137: 100,89.17
+
+
+seed 42:
+
+lmbd=0  100 , 91.67
+lmbd-.1 100,95
+lmbd=.3 100,90
+lmbd=.6 100,90
+lmbd=1  100,91.67
+lmbd=2 99.8,81.6
+
+
+seed 1137:
+lambd=0   100,91.67
+lambd=.1 100,89.17
+lambd=.3 100,93.3
+lambd=.6 100,93.3
+lambd=1 100,90
+
+seed=2024:
+lambd=0 100,86.67
+lambd=.1  100,89.16
+lambd=.3 100,88.3
+lambd=.6 100,90.83
+lambd=1 100,90
+
+
+
+
+L1 regularization
+
+seed:42
+lambd=.001  100,86.67
+lambd=.01   100,85.83
+lambd=.05   100,90
+
+seed:1137
+lambd=.05  100,92.5
+
+seed 2024:
+lambd=.05  100,87.5
+
+
+drop_out
+seed:42
+
+dr=.1  100,89
+dr=.3  100,96.66
+dr=.5  97.4,79.1
+
+seed:1137
+dr=.3  100,94.16
+
+seed:2024
+dr=.3  100,91.66
+
+
+
+L1+L2
+seed:42
+lmbd1=.05 lmbd2=.6   100,88.33
+
+seed:1137
+lmbd1=.5 lmbd=.6  100,85
+
+seed:2024
+lmbd1=.5 lmbd=.6   100,89.16
+
+
+
+
+seed=2024
+large model: 
+lmd1 and lmbd2 =0 100,90.8
+
+
+seed=42
+small model:
+lmd1 and lmbd2 =0   100,84.16
+
+medium model:
+lmd1 and lmbd2 =0   100,91.67
+
+large model:
+lmd1 and lmbd2 =0   100,83.33
+
+
+drop_out on small medium large
+seed=42 
+dr=.1
+large model: 100,90.83
+medium model: 100,89
+small model: 100,90.83
+
+
+dr=.3
+small model:100, 90.83
+medium model:100,96.66
+large model: 100,92.5
+
+dr=.5
+small model:81.4,71.6
+medium model:97.4,79.1
+large model: 100,95
+
+
+
+L1 on small medium large
+seed 42
+l1=.05
+small model= 100,91.66
+medium model= 100,90
+large model= 100,89.16
+
+
+l1=.01
+small model= 100,88.33
+medium model= 100,85.83
+large model= 100,88.3
+
+l1=.001
+small model= 100,87.5
+medium model= 100,86.67
+large model= 100,90
+
+
+
+
+reproduction some runs with diff seed
+seed=1137
+small model lambd1=0 100,84.16
+
+medium model dr=.3 100,93,34
+large model dr=.5  100,95
+medium l1=.05 100,89.16
+
+
+
+
